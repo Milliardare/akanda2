@@ -10,6 +10,20 @@ body {
     background-attachment: fixed; /* Fixer l'image de fond pour qu'elle ne bouge pas avec le défilement */
     background-color: #f5f5f5; /* Couleur de fond de secours */
 }
+.description h3 {
+    margin: 0 0 8px;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #0a3d62; /* Bleu foncé élégant */
+}
+
+.description p {
+    margin: 0;
+    font-size: 1em;
+    color: #333; /* Gris foncé lisible */
+    line-height: 1.4; /* Meilleure lisibilité */
+}
+
 header {
     display: flex;
     justify-content: space-between;
