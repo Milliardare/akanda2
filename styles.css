@@ -34,6 +34,7 @@ header {
     padding: 10px 20px;
 }
 
+
 h1{
     text-align: center;
 }
@@ -53,13 +54,29 @@ header .contact-info p {
     list-style: none;
     margin: 0;
     padding: 0;
+    flex-wrap: wrap; /* permet de passer à la ligne si trop serré */
+    justify-content: center; /* centre le menu */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+/* ✅ Responsive pour téléphones */
+@media (max-width: 768px) {
+    .navbar ul {
+      flex-direction: column; /* les liens passent en colonne */
+      align-items: center;
+    }
+  
+    .navbar li {
+      width: 100%; /* prend toute la largeur */
+      text-align: center;
+    }
+  }
+
+
 .navbar ul li {
-    margin: 5px 10px;
+    margin: 10px 10px;
 }
 
 .navbar ul li a {
@@ -70,6 +87,7 @@ header .contact-info p {
     border-radius: 4px;
     transition: background-color 0.3s;
 }
+
 
 .navbar ul li a:hover {
     background-color: #777;
