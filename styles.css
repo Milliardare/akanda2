@@ -250,3 +250,29 @@ footer ul li a:hover {
         width: 100%;
     }
 }
+/* ici c est pour la video dans le site web */
+
+.card video {
+    width: 65%;        /* comme tes images sur PC */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  /* ✅ Responsive pour mobile */
+  @media (max-width: 600px) {
+    .card-content {
+      flex-direction: column; /* vidéo au-dessus, description en dessous */
+    }
+  
+    .card video {
+      width: 100%;   /* prend toute la largeur sur téléphone */
+      height: auto;
+    }
+  
+    .description {
+      width: 100%;   /* description aussi en pleine largeur */
+      text-align: center;
+    }
+  }
+  
