@@ -131,12 +131,31 @@ header .contact-info p {
     flex-direction: column;
 }
 
-.card-content {
+/* .card-content {
     display: flex;
     flex-direction: row;
+} */
+
+.card-content {
+    display: flex;
+    flex-direction: column; /* Sur PC, on met l'image AU-DESSUS du texte pour que ce soit plus propre */
+}
+.card img {
+    width: 100%; /* L'image prend toute la largeur de son compartiment */
+    height: 200px; /* On fixe une hauteur identique pour toutes les cartes */
+    
+    /* width: 65%;
+    height: auto; */
 }
 
-.card img {
+
+.description {
+    width: 100%; /* Le texte prend toute la largeur sous l'image */
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* .card img {
     width: 60%;
     height: auto;
 }
@@ -147,7 +166,7 @@ header .contact-info p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
+} */
 
 .description h3 {
     margin: 0 0 10px;
